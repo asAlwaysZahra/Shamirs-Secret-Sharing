@@ -1,3 +1,5 @@
+package com.example.secretsharingproject;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,10 +24,7 @@ public class SecretFinder {
         System.out.println("Reconstructed secret: " + reconstructedSecret);
     }
 
-    record Share(BigInteger x, BigInteger y) {
-    }
-
-    private static BigInteger reconstructSecret(List<Share> shares, BigInteger p) {
+    public static BigInteger reconstructSecret(List<Share> shares, BigInteger p) {
         BigInteger secret = BigInteger.ZERO;
 
         for (int i = 0; i < shares.size(); i++) {

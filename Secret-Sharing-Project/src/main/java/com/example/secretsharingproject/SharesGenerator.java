@@ -1,3 +1,5 @@
+package com.example.secretsharingproject;
+
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -58,28 +60,5 @@ public class SharesGenerator {
             shares.add(new Share(x, y));
         }
         return shares;
-    }
-
-    public static class Share {
-        private final BigInteger x;
-        private final BigInteger y;
-
-        public Share(BigInteger x, BigInteger y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        public BigInteger getX() {
-            return x;
-        }
-
-        public BigInteger getY() {
-            return y;
-        }
-
-        @Override
-        public String toString() {
-            return "Share{ x=" + x + ", y=" + y + " }";
-        }
     }
 }
