@@ -132,7 +132,7 @@ public class SharesGeneratorGUI extends Application {
                 forCopy.append(share.x).append(',').append(share.y).append(',');
             }
 
-            outputArea.setText(output + "\n\nShares to copy: " + forCopy.substring(0, forCopy.length() - 1));
+            outputArea.setText(output + "\nShares to copy: " + forCopy.substring(0, forCopy.length() - 1));
 
         } catch (Exception ex) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
